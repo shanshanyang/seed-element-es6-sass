@@ -1,0 +1,1 @@
+node-sass --outout-style expanded --source-map-contents --include-path scss src/seed-element.scss -o dist && cleancss -o dist/seed-element.min.css dist/seed-element.css

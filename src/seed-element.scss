@@ -1,0 +1,9 @@
+@import "scss/color";
+
+p {
+  color: $pink;
+
+  span {
+    color: $blue
+  }
+}

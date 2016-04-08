@@ -1,0 +1,20 @@
+<html><head><meta charset="UTF-8"><link rel="import" href="./bower_components/polymer/polymer.html">
+</head><body><dom-module id="seed-element">
+<template><style>p{color:#121212}p span{color:#00F}</style>
+<style>:host{display:block;box-sizing:border-box}.author img{display:block;float:left;margin-right:5px;max-height:100px;max-width:100px}</style>
+<h1>&lt;seed-element&gt;</h1>
+
+<p class="author">
+<img src$="{{author.image}}">
+Cheers,<br>
+<span class="name">{{author.name}}</span>
+</p>
+</template>
+<script>Polymer({is:"seed-element",properties:{fancy:Boolean,author:{type:Object,value:function(){return{name:"Dimitri Glazkov",image:"http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg"}}}},ready:function(){},attached:function(){},detached:function(){},sayHello:function(e){var n=e||"Hello World!";return"seed-element says, "+n},fireLasers:function(){this.fire("seed-element-lasers",{sound:"Pew pew!"})}})</script>
+</dom-module>
+
+<!-- Use -->
+<seed-element author='{"name": "Lord Meowser", "image": "http://lorempixel.com/g/300/200/cats/"}' fancy>
+  <h2>Hello seed-element</h2>
+</seed-element>
+</body></html>

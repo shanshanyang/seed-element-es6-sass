@@ -1,0 +1,1 @@
+babel src/seed-element.js -o dist/seed-element.js

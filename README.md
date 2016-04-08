@@ -2,6 +2,14 @@
 
 An element providing a starting point for your own reusable Polymer elements.
 
+## Customize seed-element
+
+- `bin/` holds cli commands to perform SASS / ES6 compile and deploy
+- `src/` holds source code for the seed-element
+- `npm run deploy` generates seed-element.html and seed-element.standalone.html
+- make sure the output ./seed-element.html has inline-css and inline-script
+- ./seed-element.standalone.html is the minified component + demo code html, can be viewed with simple python server
+- create separate ES6 script file for demo.html
 
 ## Dependencies
 
@@ -18,7 +26,7 @@ Then, go ahead and download the element's dependencies:
 ## Linting Your Element
 
 If you wish to lint your element, we recommend that you use
-[Polylint](https://github.com/PolymerLabs/polylint) to take into account Polymer 
+[Polylint](https://github.com/PolymerLabs/polylint) to take into account Polymer
 linting specificities. You can install it via:
 
     npm install -g polylint
@@ -31,7 +39,7 @@ If your element contains errors, they will appear on the console.
 
 Note that it is possible to use `Polylint` with Atom and Sublime with the appropriate package/plugin.
 
-For more options regarding `polylint`, please refer to the 
+For more options regarding `polylint`, please refer to the
 [documentation](https://github.com/PolymerLabs/polylint#polylint).
 
 

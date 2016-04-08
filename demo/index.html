@@ -27,20 +27,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <h2>Hello seed-element</h2>
     </seed-element>
 
-    <script>
-      var seedElement = document.querySelector('seed-element');
+    <script src="index.js">
 
-      document.querySelector('#saybtn').addEventListener('click', function() {
-        alert(seedElement.sayHello('Hallo!'));
-      });
-
-      document.querySelector('#laserbtn').addEventListener('click', function() {
-        seedElement.fireLasers();
-      });
-
-      document.addEventListener("seed-element-lasers", function(e) {
-        console.log(e.detail.sound);
-      });
 
     </script>
 

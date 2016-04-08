@@ -1,48 +1,3 @@
-<link rel="import" href="../polymer/polymer.html">
-<!--
-An element providing a solution to no problem in particular.
-Example:
-    <seed-element></seed-element>
-Example:
-    <seed-element>
-      <h2>Hello seed-element</h2>
-    </seed-element>
-@demo demo/index.html
-@hero hero.svg
--->
-<dom-module id="seed-element">
-  <template><style>
-p{color:#121212}p span{color:#00F}
-</style>
-    <style>
-      /*Inline style*/
-      :host {
-        display: block;
-        box-sizing: border-box;
-      }
-
-      .author img {
-        display: block;
-        float: left;
-        margin-right: 5px;
-        max-height: 100px;
-        max-width: 100px;
-      }
-    </style>
-
-
-
-    <h1>&lt;seed-element&gt;</h1>
-    <content></content>
-    <p class="author">
-      <img src$="{{author.image}}">
-      Cheers,<br>
-      <span class="name">{{author.name}}</span>
-    </p>
-  </template>
-
-  <script>
-
 Polymer({
   is: 'seed-element',
 
@@ -70,18 +25,18 @@ Polymer({
       // We do that to ensure that each element gets its own copy of the
       // value, rather than having it shared across all instances (via the
       // prototype).
-      value: function value() {
+      value: () => {
         return {
-          name: 'Dimitri Glazkov',
-          image: 'http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg'
+          name:  'Dimitri Glazkov',
+          image: 'http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg',
         };
       }
-    }
+    },
   },
 
   // Element Lifecycle
 
-  ready: function ready() {
+  ready() {
     // `ready` is called after all elements have been configured, but
     // propagates bottom-up. This element's children are ready, but parents
     // are not.
@@ -89,7 +44,8 @@ Polymer({
     // This is the point where you should make modifications to the DOM (when
     // necessary), or kick off any processes the element wants to perform.
   },
-  attached: function attached() {
+
+  attached() {
     // `attached` fires once the element and its parents have been inserted
     // into a document.
     //
@@ -97,13 +53,13 @@ Polymer({
     // visual state or active behavior (measuring sizes, beginning animations,
     // loading resources, etc).
   },
-  detached: function detached() {
+
+  detached() {
     // The analog to `attached`, `detached` fires when the element has been
     // removed from a document.
     //
     // Use this to clean up anything you did in `attached`.
   },
-
 
   // Element Behavior
 
@@ -113,11 +69,10 @@ Polymer({
    * @param {string} greeting A positive greeting.
    * @return {string} The full greeting.
    */
-  sayHello: function sayHello(greeting) {
-    var response = greeting || 'Hello World!';
-    return 'seed-element says, ' + response;
+  sayHello(greeting) {
+    const response = greeting || 'Hello World!';
+    return `seed-element says, ${response}`;
   },
-
 
   /**
    * The `seed-element-lasers` event is fired whenever `fireLasers` is called.
@@ -132,10 +87,7 @@ Polymer({
    * Or, at least, dispatch an event in the vain hope that someone else will
    * do the zapping.
    */
-  fireLasers: function fireLasers() {
-    this.fire('seed-element-lasers', { sound: 'Pew pew!' });
+  fireLasers() {
+    this.fire('seed-element-lasers', {sound: 'Pew pew!'});
   }
 });
-</script>
-
-</dom-module>

@@ -10,7 +10,7 @@
     "element": "bin/watch-css"
   },
   "scripts": {
-    "build": "npm run build-js && npm run build-scss",
+    "build": "npm run build-js && npm run build-css",
     "build-js": "./bin/build-js",
     "build-css": "./bin/build-css",
     "watch": "./bin/watch",

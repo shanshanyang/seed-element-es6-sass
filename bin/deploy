@@ -1,3 +1,3 @@
-vulcanize --exclude "bower_components/" --inline-css --strip-comments src/seed-element.html > seed-element.html
+vulcanize --exclude "bower_components/" --inline-css --strip-comments seed-element.html > seed-element.inline.html
 
-html-minifier --collapse-inline-tag-whitespace --collapse-whitespace --minify-css --minify-js --preserve-line-breaks --remove-comments --remove-empty-elements --remove-script-type-attributes seed-element.html -o seed-element.standalone.html
+html-minifier --collapse-inline-tag-whitespace --collapse-whitespace --minify-css --minify-js --preserve-line-breaks --remove-comments --remove-empty-elements --remove-script-type-attributes seed-element.inline.html -o seed-element.standalone.html

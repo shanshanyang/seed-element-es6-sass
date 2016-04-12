@@ -4,6 +4,8 @@ An element providing a starting point for your own reusable Polymer elements.
 
 ## Customize seed-element
 
+- `npm i -g vulcanize && npm i -g nodemon`
+
 - `bin/` holds cli commands to perform SASS / ES6 compile and deploy
 - `src/` holds source code for the seed-element
 - `npm run deploy` generates seed-element.html and seed-element.standalone.html

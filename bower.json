@@ -18,10 +18,10 @@
     "/test/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.2.0"
+    "polymer": "Polymer/polymer#1.4.0"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-    "web-component-tester": "^4.0.0"
+    "iron-component-page": "git://github.com/shanshanyang/iron-component-page.git",
+    "web-component-tester": "4.0.0"
   }
 }

@@ -10,6 +10,6 @@ Cheers,<br>
 <span class="name">{{author.name}}</span>
 </p>
 </template>
-<script src="./dist/seed-element.js"></script>
+<script>"use strict";Polymer({is:"seed-element",properties:{fancy:Boolean,author:{type:Object,value:function(){return{name:"Dimitri Glazkov",image:"http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg"}}}},ready:function(){},attached:function(){},detached:function(){},sayHello:function(e){var n=e||"Hello World!";return"seed-element says, "+n},fireLasers:function(){this.fire("seed-element-lasers",{sound:"Pew pew!"})}})</script>
 </dom-module>
 </body></html>

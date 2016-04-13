@@ -21,7 +21,7 @@
     "polymer": "Polymer/polymer#1.4.0"
   },
   "devDependencies": {
-    "iron-component-page": "git://github.com/shanshanyang/iron-component-page.git",
+    "iron-component-page": "git://github.com/shanshanyang/component-page.git",
     "web-component-tester": "4.0.0"
   }
 }
